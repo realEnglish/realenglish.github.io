@@ -233,7 +233,7 @@ header {
     margin: 0 auto;
     .portfolio-box-caption {
         color: white;
-        opacity: 0;
+        opacity: 0.3;
         display: block;
         background: rgba( $theme-primary, .9 );
         position: absolute;
@@ -353,3 +353,102 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+// Schedule CSS
+.color-tables {
+    padding-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+}
+
+.color-title {
+    margin: 0 0 30px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1.5
+}
+
+.value-table {
+    border-collapse: separate;
+    font-size: 14px;
+    width: 100%
+  }
+  
+  .value-table thead>tr>th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    color: #495057;
+    background-color: #f8f9fa
+  }
+  
+  .value-table tbody>tr>td {
+    border-top: 1px solid #e9ecef
+  }
+  
+  .value-table tr>th,.value-table tr>td {
+    padding: 8px 12px;
+    text-align: right;
+    background-color: transparent;
+    transition: background-color 0.2s ease-out;
+    font-family: -apple-system,BlinkMacSystemFont,Lato,"Segoe UI",Verdana,Arial,sans-serif;
+    width: calc(100% / 8);
+    color: #868e96;
+    transition: all 0.2s ease-out
+  }
+  
+  .value-table tr>th.level,.value-table tr>td.level {
+    min-width: 110px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #495057;
+    font-weight: 500
+  }
+  
+  .value-table tr>th:first-child,.value-table tr>td:first-child {
+    padding-left: 0
+  }
+  
+  .value-table>tbody>tr {
+    transition: all 0.2s ease-out
+  }
+  
+  .value-table>tbody>tr:hover {
+    background-color: #f8f9fa
+  }
+  
+  .value-table>tbody>tr:hover>th,.value-table>tbody>tr:hover>td {
+    color: #495057
+  }
+  
+  .value-table>tbody>tr:hover>th.rgb-red,.value-table>tbody>tr:hover>td.rgb-red {
+    color: #e64980
+  }
+  
+  .value-table>tbody>tr:hover>th.rgb-green,.value-table>tbody>tr:hover>td.rgb-green {
+    color: #12b886
+  }
+  
+  .value-table>tbody>tr:hover>th.rgb-blue,.value-table>tbody>tr:hover>td.rgb-blue {
+    color: #4c6ef5
+  }
+  
+  @media (max-width: 879px) {
+    .value-table {
+        margin-left:-4%;
+        margin-right: -4%;
+        width: 100vw
+    }
+  
+    .value-table thead>tr>th:first-child,.value-table tbody>tr>td:first-child {
+        padding-left: 4%
+    }
+  
+    .value-table thead>tr>th:last-child,.value-table tbody>tr>td:last-child {
+        padding-right: 4%
+    }
+}
